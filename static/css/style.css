@@ -96,4 +96,82 @@ body {
   margin-bottom: 52px;
 }
 
+.enviado {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.enviado .enviado-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+  justify-items: center;
+}
+.enviado .enviado-container .logo {
+  width: 150px;
+  margin-bottom: 48px;
+  justify-self: center;
+  display: none;
+}
+.enviado .enviado-container .title {
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.enviado .enviado-container .subtitle {
+  color: #C7C7C7;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.enviado .enviado-container .enviado-image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.enviado .enviado-container .enviado-image img {
+  width: 80px;
+}
+.enviado .enviado-container .resend {
+  font-size: 14px;
+}
+.enviado .enviado-container .resend span {
+  color: #C7C7C7;
+}
+.enviado .enviado-container .resend a {
+  color: #ACD9B2;
+  text-decoration: none;
+}
+.enviado .enviado-container .primary-button {
+  background-color: #ACD9B2;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enviado .enviado-container .login-button {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+  .enviado .enviado-container .logo {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
