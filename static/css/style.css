@@ -96,4 +96,78 @@ body {
   margin-bottom: 52px;
 }
 
+.psswrd {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.psswrd .form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+.psswrd .form-container .logo {
+  width: 150px;
+  margin-bottom: 48px;
+  justify-self: center;
+  display: none;
+}
+.psswrd .form-container .title {
+  font-size: var(--lg);
+  margin-bottom: 36px;
+  text-align: start;
+}
+.psswrd .form-container .form {
+  display: flex;
+  flex-direction: column;
+}
+.psswrd .form-container .form div {
+  display: flex;
+  flex-direction: column;
+}
+.psswrd .form-container .label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.psswrd .form-container .input {
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: 16px;
+  padding: 6px;
+  margin-bottom: 12px;
+}
+.psswrd .form-container .input-name,
+.psswrd .form-container .input-email,
+.psswrd .form-container .input-password {
+  margin-bottom: 22px;
+}
+.psswrd .form-container .primary-button {
+  background-color: #ACD9B2;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+}
+.psswrd .form-container .login-button {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+  .psswrd .form-container {
+    height: 100%;
+  }
+  .psswrd .form {
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
