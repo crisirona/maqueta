@@ -96,4 +96,124 @@ body {
   margin-bottom: 52px;
 }
 
+.desktop-menu {
+  width: 100px;
+  height: auto;
+  border: 1px solid #C7C7C7;
+  border-radius: 5px;
+  padding: 20px 20px 0 20px;
+  display: none;
+}
+.desktop-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.desktop-menu ul li {
+  text-align: end;
+}
+.desktop-menu ul li a {
+  color: #123123;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+  font-weight: bold;
+}
+.desktop-menu ul li:last-child {
+  padding-top: 20px;
+  border-top: 1px solid #C7C7C7;
+}
+.desktop-menu ul li:last-child a {
+  color: #ACD9B2;
+  font-size: 14px;
+}
+
+.mobile-menu {
+  padding: 24px;
+  display: none;
+}
+.mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid #C7C7C7;
+}
+.mobile-menu ul:nth-child(3) {
+  margin-top: 100px;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: #123123;
+  font-weight: bold;
+}
+.mobile-menu .email {
+  font-size: 14px;
+  font-weight: 300 !important;
+}
+.mobile-menu .sign-out {
+  font-size: 14px;
+  color: #ACD9B2 !important;
+}
+
+.main-container .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px;
+  place-content: center;
+}
+@media (max-width: 640px) {
+  .main-container .cards-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+}
+.main-container .cards-container .product-card {
+  width: 240px;
+}
+@media (max-width: 640px) {
+  .main-container .cards-container .product-card {
+    width: 140px;
+  }
+}
+.main-container .cards-container .product-card img {
+  width: 240px;
+  height: 240px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+  .main-container .cards-container .product-card img {
+    width: 140px;
+    height: 140px;
+  }
+}
+.main-container .cards-container .product-card .product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.main-container .cards-container .product-card .product-info figure img {
+  width: 25px;
+  height: 25px;
+}
+.main-container .cards-container .product-card .product-info div p:nth-child(1) {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.main-container .cards-container .product-card .product-info div p:nth-child(2) {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #C7C7C7;
+}
+
 /*# sourceMappingURL=style.css.map */
