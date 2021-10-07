@@ -193,6 +193,11 @@ nav{
             .nabvar-shopping-cart{
                 position: relative;
 
+                .icon-list{
+                    @media (max-width:760px){
+                        display: none;
+                    }
+                }
                 div{
                     width: 16px;
                     height: 16px;
@@ -718,6 +723,9 @@ nav{
         font-size: $md;
         font-weight: bold;
         height: 50px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 50px;
     }
     .login-button {
         margin-top: 14px;

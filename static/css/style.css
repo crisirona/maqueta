@@ -169,6 +169,11 @@ nav .navbar-right ul .cart-img {
 nav .navbar-right ul .nabvar-shopping-cart {
   position: relative;
 }
+@media (max-width: 760px) {
+  nav .navbar-right ul .nabvar-shopping-cart .icon-list {
+    display: none;
+  }
+}
 nav .navbar-right ul .nabvar-shopping-cart div {
   width: 16px;
   height: 16px;
@@ -652,6 +657,9 @@ nav .navbar-right ul li a:hover {
   font-size: 16px;
   font-weight: bold;
   height: 50px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
 }
 .micuenta .form-container .login-button {
   margin-top: 14px;
